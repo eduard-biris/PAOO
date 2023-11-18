@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "SmartArray.h"
+#include "ReallySmartArray.h"
 
 int main() {
     std::cout << "Creating myArray and pushing some data...\n";
@@ -28,4 +29,9 @@ int main() {
     SmartArray myThirdArray = SmartArray({1, 2, 3, 4, 5});
 
     std::cout << "myThirdArray: "; myThirdArray.print();
+
+    std::cout << "Creating a really smart array...\n";
+    ReallySmartArray myReallySmartArray = ReallySmartArray({6, 2, 1, 9, 4, 5});
+    myReallySmartArray.sortArray();
+    myReallySmartArray.print();
 }
