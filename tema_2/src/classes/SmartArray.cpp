@@ -3,6 +3,7 @@
 #include <vector>
 
 #include "SmartArray.h"
+#include "utils.h"
 
 SmartArray::SmartArray(int totalSize) {
     std::cout << "Constructor called\n";
@@ -151,11 +152,6 @@ void SmartArray::sortArray() {
 }
 
 void SmartArray::print() {
-    std::cout << "SmartArray::: [";
-
-    for(int i=0; i<n; i++) {
-        std::cout << array[i] << " ";
-    }
-
-    std::cout << "\b]\n";
+    std::cout << "SmartArray::: ";
+    utils::printArrayOfInt(array, n);
 }
