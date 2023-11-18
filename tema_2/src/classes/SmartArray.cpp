@@ -151,7 +151,7 @@ void SmartArray::sortArray() {
 }
 
 void SmartArray::print() {
-    std::cout << "[";
+    std::cout << "SmartArray::: [";
 
     for(int i=0; i<n; i++) {
         std::cout << array[i] << " ";

@@ -1,8 +1,9 @@
 #pragma once
 
 #include <vector>
+#include "ArrayInterface.h"
 
-class SmartArray {
+class SmartArray : public ArrayInterface {
     private:
         int n = 0;
         int avMemory = 0;

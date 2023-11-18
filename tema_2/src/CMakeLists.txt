@@ -7,5 +7,6 @@ add_subdirectory(classes)
 add_executable(myApp main.cpp)
 
 target_link_libraries(myApp PUBLIC SmartArray)
+target_link_libraries(myApp PUBLIC ArrayInterface)
 
 target_include_directories(myApp PUBLIC classes)
